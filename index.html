@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>shoe website</title>
+    <link rel="stylesheet" href="./css/index.css" />
+    <script src="script.js"></script>
+    <style>
+      form {
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+        margin-right: 1.5em;
+      }
+
+      input[type="text"] {
+        width: 100%;
+        padding: 10px 15px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+      }
+
+      button[type="submit"] {
+        background-color: #4caf50;
+        color: white;
+        padding: 12px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <li><a href="index.html">home</a></li>
+      <li><a href="About us.html">About us</a></li>
+      <li><a href="contact.html">Contact us</a></li>
+      <li><a href="login.html">Register or login</a></li>
+      <form action="/search" method="get">
+        <input type="text" placeholder="Search..." />
+        <button type="submit">Go</button>
+      </form>
+    </nav>
+    <header>
+      <div class="shoe-container">
+        <div class="shoe1">
+          Bred
+          <input type="button" value="Add to cart" onclick="add('Bred')" />
+        </div>
+
+        <div class="shoe2">
+          old skool<input
+            type="button"
+            value="Add to cart"
+            onclick="add('old skool')"
+          />
+        </div>
+        <div class="shoe3">
+          cortez<input
+            type="button"
+            value="Add to cart"
+            onclick="add('cortez')"
+          />
+        </div>
+        <div class="shoe4">
+          gazelle<input
+            type="button"
+            value="Add to cart"
+            onclick="add('gazelle')"
+          />
+        </div>
+        <div class="shoe5">
+          converse chuck<input
+            type="button"
+            value="Add to cart"
+            onclick="add
+            ('converse chuck')"
+          />
+        </div>
+        <div class="shoe6">
+          israfil<input
+            type="button"
+            value="Add to cart"
+            onclick="add('israfil'
+            )"
+          />
+        </div>
+
+        <div class="cart-container" id="cartContainer">
+          <h2>Cart</h2>
+          <div id="cartItems"></div>
+          <button onclick="hideCart()">Close</button>
+          <div class="cart1" id="cart">
+            Total items <b id="c"></b>
+            <ol id="hello"></ol>
+            <!---item detail here-->
+          </div>
+        </div>
+      </div>
+    </header>
+    <footer>
+      <div class="footer-space">
+        © 2023 Aadarsha Nepali. Discovery, Inc. or its subsidiaries and
+        affiliates. All rights reserved.
+      </div>
+    </footer>
+  </body>
+</html>

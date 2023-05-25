@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0" />
+    <link rel="icon" href="./images/logo.jpg" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/login.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <title>Document</title>
+    <script type="text/javascript">
+      function validate() {
+        var username = document.getElementById("uname");
+        var password = document.getElementById("pass");
+
+        if (username.value.trim() == "") {
+          username.style.border = "solid 3px red";
+          document.getElementById("labelUser").style.visibility = "visible";
+          alert("username must be filled");
+          return false;
+        } else if (password.value.trim() == "") {
+          alert("password must be filled");
+          return false;
+        } else if (password.value.trim().length < 5) {
+          alert("Password too short");
+          return false;
+        } else {
+          alert("Logged in successful");
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <nav>
+      <li><a href="index.html">home</a></li>
+      <li><a href="About us.html">About us</a></li>
+      <li><a href="contact.html">Contact us</a></li>
+      <li><a href="login.html">Register or login</a></li>
+      <form action="/search" method="get">
+        <input type="text" placeholder="Search..." />
+        <button type="submit">Go</button>
+      </form>
+    </nav>
+    <div class="wrapper">
+      <h2>Login Form</h2>
+      <form class="login" onsubmit="return validate()" action="slider.html">
+        <label for="username">Username</label>
+        <input id="uname" placeholder="Username" type="text" />
+        <label id="labelUser" style="color: red; visibility: hidden"
+          >Invalid</label
+        ><br />
+        <label for="pass">Password</label>
+        <input id="pass" placeholder="Password" type="password" /><br />
+        <button type="submit">Submit</button>
+        <a href="register.html" class="register-link">
+          <input type="button" value="Register" class="register-button" />
+        </a>
+      </form>
+    </div>
+  </body>
+</html>

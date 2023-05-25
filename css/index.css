@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
+
+* {
+  margin: 0;
+}
+
+.wrapper {
+  min-height: 100vh;
+  position: relative;
+}
+
+nav {
+  font-family: "Roboto", sans-serif;
+  background-color: rgba(94, 32, 48, 0.877);
+  height: 100%;
+  list-style-type: none;
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.959);
+  text-transform: uppercase;
+  font-weight: 400;
+  padding-left: 20em;
+  margin-bottom: 2em;
+}
+
+.shoe-container {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 0.8rem;
+  height: 500px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px 50px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: rgb(63, 55, 55);
+}
+
+.shoe-container input[type="button"] {
+  font-family: "Roboto", sans-serif;
+  background-color: #4caf50;
+  color: white;
+  padding: 5px;
+  border: none;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.shoe1 input[type="button"],
+.shoe2 input[type="button"],
+.shoe3 input[type="button"],
+.shoe4 input[type="button"],
+.shoe5 input[type="button"],
+.shoe6 input[type="button"] {
+  position: relative;
+  top: 16.5em;
+  left: 10em;
+}
+
+.shoe1 {
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(https://static8.depositphotos.com/1004370/966/i/600/depositphotos_9668488-stock-photo-sneakers-isolated-on-white-background.jpg);
+  transition: 1s;
+  box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.1);
+}
+
+.shoe2 {
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(https://t3.ftcdn.net/jpg/00/77/52/94/360_F_77529477_n4TqondFEsZWUpKcJXg5TiWndYnvzsqc.jpg);
+  transition: 1s;
+  box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.1);
+}
+.shoe3 {
+  text-align: center;
+  background-image: url(https://media.istockphoto.com/id/1248566148/photo/pair-of-stylish-sneakers-isolated-on-white-background-white-casual-shoes.jpg?s=170667a&w=0&k=20&c=J75eAdzSckZNNlf1zizUkXKJHS1Z0qDtET0BE7hqctI=);
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: 1s;
+  box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.1);
+}
+.shoe4 {
+  text-align: center;
+  background: url(https://media.istockphoto.com/id/175537625/photo/sneakers-with-clipping-path.jpg?b=1&s=170667a&w=0&k=20&c=GzRUE7GmoRNgLG49o5AldQDgeh7fxzHddc4MVaduDvc=);
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: 1s;
+  box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.1);
+}
+.shoe5 {
+  text-align: center;
+  background: url(https://media.istockphoto.com/id/171224469/photo/canvas-shoes.jpg?b=1&s=612x612&w=0&k=20&c=U9NLTutbuQ_L3HABoaa9Bsb_U3iJYw1QmKCBe0H3KWM=);
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: 1s;
+  box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.1);
+}
+.shoe6 {
+  text-align: center;
+  background: url(https://live.staticflickr.com/65535/50395873783_8c36f8de3f_b.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: 1s;
+  box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  background-color: rgba(44, 42, 42, 0.801);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  color: rgba(255, 255, 255, 0.788);
+  word-spacing: 1px;
+}
+
+.footer-space {
+  position: inherit;
+  margin-left: 1.5em;
+  top: 1.5em;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 0.8rem;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  transition: 1s;
+}
+a :hover {
+  color: rgb(20, 20, 41);
+}
+.cart-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 300px;
+  background-color: white;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  display: none; /* Hide the cart section by default */
+}
+
+.cart-item {
+  margin-bottom: 10px;
+}

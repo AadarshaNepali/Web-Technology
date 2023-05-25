@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart</title>
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="index.html" />
+    <link rel="stylesheet" href="./css/contact.css" />
+    <style>
+      form {
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+        margin-right: 1.5em;
+      }
+
+      nav input[type="text"] {
+        width: 100%;
+        padding: 10px 15px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+      }
+
+      button[type="submit"] {
+        background-color: #4caf50;
+        color: white;
+        padding: 12px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <nav>
+        <li><a href="index.html">home</a></li>
+        <li><a href="About us.html">About us</a></li>
+        <li><a href="contact.html">Contact us</a></li>
+        <li><a href="login.html">Register or login</a></li>
+        <form action="/search" method="get">
+          <input type="text" placeholder="Search..." />
+          <button type="submit">Go</button>
+        </form>
+      </nav>
+      <main>
+        <section id="contact">
+          <div class="container">
+            <h2>Contact Us</h2>
+            <p>
+              We would love to hear from you! If you have any questions,
+              comments, or feedback, please don't hesitate to reach out to us.
+            </p>
+
+            <div class="feedback">
+              <form action="#" method="POST">
+                <div>
+                  <label for="name">Name:</label>
+                  <input type="text" id="name" name="name" required />
+                </div>
+
+                <div>
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" name="email" required />
+                </div>
+
+                <div>
+                  <label for="message">Message:</label>
+                  <textarea id="message" name="message" required></textarea>
+                </div>
+
+                <button type="submit">Send Message</button>
+              </form>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <div class="footer-space">
+          © 2023 Aadarsha Nepali. Discovery, Inc. or its subsidiaries and
+          affiliates. All rights reserved.
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
